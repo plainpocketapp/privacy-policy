@@ -5,84 +5,109 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>품앗이장부 개인정보 처리방침</title>
 <style>
+  *{box-sizing:border-box}
   body{max-width:760px;margin:0 auto;padding:24px 20px 64px;
        font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;
-       line-height:1.75;color:#17171a;background:#fff;}
+       font-size:18px;line-height:1.75;color:#17171a;background:#fff;
+       overflow-wrap:anywhere;}
   h1{font-size:1.6rem;margin-bottom:4px;}
   h2{font-size:1.15rem;margin-top:32px;border-top:1px solid #e5e5e5;padding-top:20px;}
-  .date{color:#666;font-size:.9rem;margin-bottom:8px;}
-  ul{padding-left:20px;}
-  li{margin:6px 0;}
-  table{border-collapse:collapse;width:100%;margin:12px 0;}
-  th,td{border:1px solid #ddd;padding:8px 10px;text-align:left;font-size:.95rem;}
+  .date{color:#555;font-size:1rem;margin-bottom:8px;}
+  ul{padding-left:24px;}
+  li{margin:8px 0;}
+  table{border-collapse:collapse;width:100%;margin:12px 0;table-layout:fixed;}
+  th,td{border:1px solid #ddd;padding:10px;text-align:left;vertical-align:top;font-size:1rem;}
   th{background:#f6f6f4;}
   .note{background:#f6f6f4;padding:12px 14px;border-radius:8px;}
-  a{color:#1f4e79;}
+  a{color:#1f4e79;text-underline-offset:3px;}
+  a:focus-visible{outline:3px solid #1f4e79;outline-offset:3px;}
 </style>
 </head>
 <body>
-
+<main>
 <h1>품앗이장부 개인정보 처리방침</h1>
-<p class="date">시행일: 2026년 9월 6일</p>
+<p class="date">시행일: 2026년 9월 13일</p>
 
-<p><strong>품앗이장부</strong>(이하 "앱")는 이용자의 개인정보를 소중히 다룹니다.
-이 앱은 <strong>서버를 운영하지 않으며, 이용자가 입력한 기록은 이용자의 기기 안에만 저장</strong>됩니다.</p>
+<p><strong>Plain Pocket</strong>(이하 "개발자")은 <strong>품앗이장부</strong>(이하 "앱")를 제공합니다.
+앱은 경조사 기록을 이용자의 기기에 저장하며, 개발자는 장부 기록을 보관하는 별도 서버를 운영하지 않습니다.
+회원가입과 로그인 기능은 없습니다.</p>
+<p>이용자가 입력한 장부 기록, 운영체제의 백업·기기 이전, 광고 서비스 및 이메일 문의 과정에서 처리되는 정보는 다음과 같이 구분됩니다.</p>
 
-<h2>1. 앱이 수집하는 개인정보</h2>
-<p><strong>앱은 개인정보를 수집하거나 외부로 전송하지 않습니다.</strong></p>
-<p>이용자가 앱에 입력한 내용(이름, 관계, 메모, 금액, 날짜)은 기기 내부 저장소에만 보관되며,
-개발자를 포함한 누구에게도 전송되지 않습니다. 회원가입과 로그인 기능이 없습니다.</p>
+<h2>1. 장부 기록의 저장과 이용</h2>
+<p>이용자가 입력한 이름, 관계, 메모, 금액, 날짜 등은 기록 저장·조회·수정·삭제 기능을 제공하기 위해 기기 내부의 앱 저장소에 보관됩니다.
+앱은 이 장부 기록을 개발자의 서버로 전송하지 않습니다.</p>
+<p>다만 운영체제의 백업·복원 또는 기기 이전 과정에서 장부 기록이 처리될 수 있습니다. 해당 내용은 아래 2항을 참고해 주세요.</p>
 
-<h2>2. 광고를 통해 수집되는 정보</h2>
-<p>앱은 무료로 제공되며, 유지를 위해 Google의 광고 서비스인
-<strong>Google AdMob</strong> 배너 광고를 표시합니다.
-이 과정에서 Google이 다음 정보를 수집·이용할 수 있습니다.</p>
+<h2>2. 운영체제의 백업·복원과 기기 이전</h2>
+<p>현재 앱의 장부 데이터는 Android의 OS 백업 및 기기 이전 대상에 포함될 수 있습니다.
+이용자의 기기·계정 설정과 운영체제·제조사의 지원 방식에 따라 Google의 클라우드 백업에 포함되거나 다른 기기로 이전·복원될 수 있습니다.</p>
+<p>이는 개발자가 직접 제공하는 서버 저장이나 앱 자체의 백업 기능과는 다릅니다.
+개발자는 이용자의 OS 백업에 직접 접근하거나 이를 대신 복구하지 않습니다.</p>
+<p>백업과 복원 여부는 기기 설정 및 서비스 조건에 따라 달라지므로, 앱 설치만으로 모든 기록의 백업·복원이 보장되지는 않습니다.
+백업 설정과 백업본 관리는 기기 설정 및 해당 백업 서비스의 안내에서 확인할 수 있습니다.</p>
+<p><a href="https://developer.android.com/identity/data/autobackup" target="_blank" rel="noopener noreferrer">Android OS 백업 안내</a></p>
 
+<h2>3. 광고 서비스를 통한 정보 처리</h2>
+<p>앱은 Google AdMob 배너 광고를 사용합니다.
+광고 SDK는 광고 제공, 분석 및 부정행위 방지를 위해 아래 정보를 자동으로 수집·공유할 수 있습니다.
+실제 처리 범위는 광고 설정, 이용자의 선택, 기기 및 서비스 제공 조건에 따라 달라질 수 있습니다.</p>
 <table>
-  <tr><th>항목</th><th>이용 목적</th><th>처리 주체</th></tr>
-  <tr><td>광고 식별자(Advertising ID)</td><td>광고 게재 및 성과 측정</td><td>Google</td></tr>
-  <tr><td>기기 정보, 대략적 위치, IP 주소</td><td>광고 게재 및 부정 클릭 방지</td><td>Google</td></tr>
+  <thead><tr><th scope="col">정보 유형</th><th scope="col">예시</th></tr></thead>
+  <tbody>
+    <tr><td>IP 주소 및 이를 통해 추정한 대략적인 위치</td><td>네트워크 IP 주소, IP 기반 지역 정보</td></tr>
+    <tr><td>앱·광고 상호작용 정보</td><td>앱 실행, 탭, 광고 동영상 조회 등</td></tr>
+    <tr><td>진단 정보</td><td>앱·SDK 실행 시간, 멈춤 빈도, 에너지 사용 등 성능 관련 정보</td></tr>
+    <tr><td>기기 및 계정 관련 식별자</td><td>Android 광고 ID, 앱 세트 ID, 해당되는 경우 기기 로그인 계정과 관련된 기타 식별자</td></tr>
+  </tbody>
 </table>
-
-<p>이 정보는 <strong>Google이 직접 수집하며, 개발자는 접근할 수 없습니다.</strong>
-자세한 내용은
-<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
-Google의 파트너 사이트 정책</a>을 참고하시기 바랍니다.</p>
-
-<h2>3. 개인정보의 제3자 제공</h2>
-<p>개발자는 이용자의 개인정보를 제3자에게 제공하지 않습니다.
-위 2항의 광고 관련 정보는 Google이 자체적으로 처리합니다.</p>
-
-<h2>4. 보관 및 파기</h2>
+<p>이 정보는 광고 SDK를 통해 Google에 전송·처리됩니다.
+개발자가 별도 서버를 운영하지 않는다는 설명이 광고 SDK의 정보 수집·전송도 없다는 뜻은 아닙니다.
+Google의 처리 및 보관·삭제 기준은 아래 정책과 안내를 참고해 주세요.</p>
 <ul>
-  <li>앱에 입력한 기록은 <strong>기기에만</strong> 저장됩니다.</li>
-  <li><strong>앱을 삭제하면 저장된 기록도 함께 삭제</strong>되며, 개발자는 이를 복구할 수 없습니다.</li>
-  <li>개발자가 별도로 보관하는 이용자 정보는 없습니다.</li>
+  <li><a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites?hl=ko" target="_blank" rel="noopener noreferrer">Google 서비스를 사용하는 사이트·앱의 정보 처리 안내</a></li>
+  <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK의 데이터 처리 안내</a></li>
 </ul>
 
-<h2>5. 이용자의 권리</h2>
+<h2>4. 외부 서비스 이용 및 문의 정보</h2>
+<p>앱은 이용자가 입력한 장부 기록을 개발자의 서버로 수집하거나 광고 목적으로 별도 제공하지 않습니다.
+OS 백업·기기 이전 및 광고 SDK를 통한 정보 처리는 위 2항과 3항에 설명한 내용에 따릅니다.</p>
+<p>이용자가 이메일로 문의하면 발신 이메일 주소와 문의 내용, 이용자가 첨부한 자료를 문의 확인 및 답변을 위해 처리합니다.
+문의에 다른 사람의 이름·금액 등 불필요한 개인정보가 포함되지 않도록 해 주세요.</p>
+<p>이용자가 이메일로 보낸 문의 내용은 문의 확인·답변을 위해 개발자의 이메일 계정에 보관됩니다.
+개발자는 이 문의 내용을 다른 목적으로 사용하거나 제3자에게 제공하지 않습니다.</p>
+
+<h2>5. 기록의 보관 및 삭제</h2>
 <ul>
-  <li>기록은 앱 안에서 언제든지 수정하거나 삭제할 수 있습니다.</li>
-  <li>광고 맞춤설정을 끄거나 광고 식별자를 재설정하려면
-      <strong>기기 설정 → Google → 광고</strong>에서 변경할 수 있습니다.</li>
+  <li>장부 기록은 이용자가 삭제하거나 앱 데이터를 삭제할 때까지 기기의 앱 저장소에 보관됩니다.</li>
+  <li>앱 삭제 또는 앱 데이터 삭제 시 해당 기기의 앱 저장소에 있는 기록은 삭제됩니다. 개발자는 삭제된 기기 내 기록을 직접 복구할 수 없습니다.</li>
+  <li>OS 백업본이 있는 경우 백업 서비스의 보관·삭제 규칙이 별도로 적용되며, 앱 재설치 또는 기기 이전 시 이전 기록이 복원될 수 있습니다.</li>
+  <li>앱 안에서 기록을 삭제했다고 해서 이미 만들어진 OS 백업본까지 즉시 삭제되는 것은 아닙니다. 백업본 관리·삭제는 해당 서비스 안내를 확인해 주세요.</li>
 </ul>
 
-<h2>6. 앱이 요구하는 권한</h2>
-<p>앱은 카메라, 연락처, 위치, 사진 등 <strong>어떠한 기기 권한도 요청하지 않습니다.</strong>
-광고 표시를 위해 인터넷 연결만 사용합니다.</p>
+<h2>6. 이용자의 선택과 권리</h2>
+<ul>
+  <li>장부 기록과 사람 정보는 앱이 제공하는 수정 기능으로 변경할 수 있으며, 개별 장부 기록은 삭제할 수 있습니다.</li>
+  <li>기기에 저장된 앱 데이터를 모두 지우려면 기기 설정의 앱 데이터 삭제 기능이나 앱 삭제를 이용할 수 있습니다. 이 작업 전 필요한 기록을 확인해 주세요.</li>
+  <li>광고 ID의 재설정·삭제 및 광고 관련 설정은 Android 기기 설정에서 확인할 수 있습니다. 메뉴 이름과 제공 기능은 기기 및 Android 버전에 따라 다를 수 있습니다.</li>
+  <li>맞춤 광고 관련 설정은 <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google 내 광고 센터</a>에서도 확인할 수 있습니다. 맞춤 광고를 끄더라도 광고 제공·성과 측정·부정행위 방지 등을 위한 정보 처리가 모두 중단되는 것은 아닙니다.</li>
+  <li>이메일로 보낸 문의 정보의 열람·정정·삭제 등 개인정보 관련 요청은 아래 문의처로 연락할 수 있습니다.</li>
+</ul>
 
-<h2>7. 아동의 개인정보</h2>
-<p>이 앱은 만 14세 미만 아동을 대상으로 하지 않으며,
-아동의 개인정보를 고의로 수집하지 않습니다.</p>
+<h2>7. 앱이 사용하는 권한</h2>
+<p>현재 앱은 카메라, 연락처, GPS 위치, 사진 접근을 위한 권한을 요청하지 않습니다.</p>
+<p>광고와 관련 서비스 동작을 위해 인터넷 연결, 네트워크 상태 확인, 광고 ID 및 광고 서비스 관련 권한 등이 앱에 포함됩니다.
+이들 권한은 카메라·연락처 접근처럼 이용자에게 별도의 허용 창을 표시하는 권한과 다릅니다.</p>
+<p>위치 접근 권한을 요청하지 않더라도 광고 서비스는 IP 주소로 대략적인 위치를 추정할 수 있습니다.</p>
 
-<h2>8. 처리방침의 변경</h2>
-<p>이 처리방침이 변경되는 경우 이 페이지를 통해 공지하며,
-변경된 내용은 게시일부터 적용됩니다.</p>
+<h2>8. 아동 및 처리방침 변경</h2>
+<p>이 앱은 만 14세 미만 아동을 대상으로 제공하지 않습니다.</p>
+<p>처리방침을 변경하는 경우 변경 내용과 시행일을 이 페이지에 안내합니다.
+법령상 별도 고지 또는 동의가 필요한 경우에는 해당 절차를 따릅니다.</p>
 
-<h2>9. 문의처</h2>
-<p class="note">
-  개인정보 처리에 관한 문의: <a href="mailto:plainpocketapp@gmail.com">plainpocketapp@gmail.com</a>
-</p>
-
+<h2>9. 개인정보 관련 문의</h2>
+<p class="note">앱 제공자: Plain Pocket<br>
+개인정보 관련 문의: <a href="mailto:plainpocketapp@gmail.com">plainpocketapp@gmail.com</a></p>
+</main>
 </body>
 </html>
